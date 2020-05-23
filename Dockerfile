@@ -127,3 +127,5 @@ RUN jt -t onedork -T -N -altp
 #java -version
 #
 ENV PYTHONUNBUFFERED=0
+
+CMD ["python"]
