@@ -120,10 +120,12 @@ RUN set -ex; \
         modin[dask] \
         https://github.com/rochacbruno/flasgger/tarball/master \
         jupyterthemes \
-        prefect
+        prefect \
+        supervisord-dependent-startup
 
 
 #
+RUN prefect backend server
 RUN jt -t onedork -T -N -altp
 
 ENV PYTHONUNBUFFERED=0
