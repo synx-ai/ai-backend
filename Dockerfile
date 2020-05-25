@@ -119,13 +119,13 @@ RUN set -ex; \
         py-spy \
         modin[dask] \
         https://github.com/rochacbruno/flasgger/tarball/master \
-        jupyterthemes
+        jupyterthemes \
+        prefect
 
 
 #
 RUN jt -t onedork -T -N -altp
-#java -version
-#
+
 ENV PYTHONUNBUFFERED=0
 
 CMD ["python"]
