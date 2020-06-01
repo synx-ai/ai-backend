@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$VCS_REF=$(`git rev-parse —-short HEAD`)
-$VERSION="v0.9.$VCS_REF"
+$VCS_REF=`git rev-parse —-short HEAD`
+$VERSION="v0.9.${VCS_REF}"
 
 docker build \
   --build-arg VCS_REF=${VCS_REF} \
