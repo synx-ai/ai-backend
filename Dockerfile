@@ -16,6 +16,7 @@ RUN set -ex; \
             libpq-dev \
             wget \
             nginx \
+            mtail \
                 --assume-yes
 
 
@@ -121,6 +122,7 @@ RUN set -ex; \
         https://github.com/rochacbruno/flasgger/tarball/master \
         jupyterthemes \
         prefect \
+        bokeh \
         supervisord-dependent-startup
 
 
