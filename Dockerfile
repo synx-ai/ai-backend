@@ -2,6 +2,19 @@ FROM python:3.7-slim
 
 MAINTAINER Synx <engineering@synx.co>
 
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.name="Synx Machine Learning Backend" \
+      org.label-schema.description="Default platform stack for machine learning projects." \
+      org.label-schema.url="https://synx.ai" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/synx-ai/galois" \
+      org.label-schema.vendor="Synx" \
+      org.label-schema.version=$VERSION \
+      org.label-schema.schema-version="1.0"
 
 RUN set -ex; \
     apt-get update --assume-yes && \
