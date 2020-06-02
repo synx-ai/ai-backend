@@ -132,7 +132,6 @@ RUN set -ex; \
         xgboost==0.81 \
         py-spy \
         modin[dask] \
-        https://github.com/rochacbruno/flasgger/tarball/master \
         jupyterthemes \
         prefect \
         bokeh \
