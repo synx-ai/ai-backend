@@ -30,7 +30,7 @@ RUN set -ex; \
             wget \
             nginx \
             mtail \
-            libmysqlclient-dev \
+            default-libmysqlclient-dev \
                 --assume-yes
 
 
