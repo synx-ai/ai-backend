@@ -30,6 +30,7 @@ RUN set -ex; \
             wget \
             nginx \
             mtail \
+            libmysqlclient \
                 --assume-yes
 
 
@@ -53,7 +54,9 @@ RUN set -ex; \
             mongoengine \
             celery \
             psycopg2 \
-            sshtunnel
+            sshtunnel \
+            sqlalchemy \
+            mysqlclient
 
 
 #
