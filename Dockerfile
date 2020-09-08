@@ -138,7 +138,8 @@ RUN set -ex; \
         jupyterthemes \
         prefect \
         bokeh \
-        supervisord-dependent-startup
+        supervisord-dependent-startup \
+        annoy
 
 
 #
