@@ -139,7 +139,8 @@ RUN set -ex; \
         prefect \
         bokeh \
         supervisord-dependent-startup \
-        annoy
+        annoy \
+        texthero
 
 
 #
