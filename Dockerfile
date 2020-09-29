@@ -140,7 +140,8 @@ RUN set -ex; \
         bokeh \
         supervisord-dependent-startup \
         annoy \
-        texthero
+        texthero \
+        umap-learn
 
 
 #
