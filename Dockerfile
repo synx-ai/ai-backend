@@ -141,6 +141,7 @@ RUN set -ex; \
         supervisord-dependent-startup \
         annoy \
         texthero \
+        numba \
         umap-learn
 
 
