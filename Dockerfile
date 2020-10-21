@@ -142,7 +142,8 @@ RUN set -ex; \
         annoy \
         texthero \
         numba \
-        umap-learn
+        umap-learn \
+        watchdog
 
 
 #
